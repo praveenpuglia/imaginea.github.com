@@ -1,0 +1,439 @@
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+
+	<title>Oops Something Amiss Here</title>
+
+	<META NAME="description" CONTENT="Oops Something Amiss Here">
+
+	<META NAME="keywords" CONTENT="Pramati">
+
+	<META NAME="published" CONTENT="July 1, 2011">
+
+	<META NAME="categories" CONTENT="error">
+
+	<META NAME="robots" CONTENT="index,follow">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="/themes/white.css" type="text/css" media="screen" />
+
+	<!--[if IE]>
+
+		<link rel="stylesheet" type="text/css" href="ie.css" />
+
+	<![endif]-->
+
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	 <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+
+	 <script type="text/javascript" src="/js/jcarousellite.js"></script>
+
+	<script type="text/javascript" src="/js/tooltip.js"></script>
+
+    <script type="text/javascript">
+
+	jQuery(document).ready(function() {
+
+	
+
+	
+
+var index = 0;
+
+ $("#bar2").css("background","#264C3A");
+
+	  $("#bar5").css("background","#264C3A");
+
+	   $("#bar9").css("background","#264C3A");
+
+	    $("#bar21").css("background","#264C3A");
+
+		$("#bar2").addClass("pop");
+
+$("#bar5").addClass("pop");
+
+$("#bar9").addClass("pop");
+
+$("#bar21").addClass("pop");
+
+		$(".pop").tooltip({tooltipcontentclass:"mycontent"});
+
+$(".jCarouselLite").jCarouselLite({
+
+btnNext: ".next",
+
+btnPrev: ".prev",
+
+visible: 1,
+
+circular: false,
+
+afterEnd: function(a){
+
+
+
+index = $(a[0]).index();
+
+if(index == 0){
+
+$(".bar .count").each(function() {
+
+$(this).css('background','#71A68D'); //Prints out the text contained in this DIV
+
+$(this).removeClass("pop");
+
+});
+
+ $("#bar2").css("background","#264C3A");
+
+	  $("#bar5").css("background","#264C3A");
+
+	   $("#bar9").css("background","#264C3A");
+
+	    $("#bar13").css("background","#264C3A");
+
+$("#bar2").addClass("pop");
+
+$("#bar5").addClass("pop");
+
+$("#bar9").addClass("pop");
+
+$("#bar13").addClass("pop");
+
+$(".pop").tooltip({tooltipcontentclass:"mycontent"});
+
+}
+
+if(index == 1){
+
+$(".bar .count").each(function() {
+
+$(this).css('background','#71A68D'); //Prints out the text contained in this DIV
+
+$(this).removeClass("pop");
+
+});
+
+$("#bar26").css('background','#264C3A');
+
+$("#bar8").css('background','#264C3A');
+
+$("#bar1").css('background','#264C3A');
+
+$("#bar17").css('background','#264C3A');
+
+$("#bar26").addClass("pop");
+
+$("#bar8").addClass("pop");
+
+$("#bar1").addClass("pop");
+
+$("#bar17").addClass("pop");
+
+$(".pop").tooltip({tooltipcontentclass:"mycontent"});
+
+}
+
+if(index == 2){
+
+$(".bar .count").each(function() {
+
+$(this).css('background','#71A68D'); //Prints out the text contained in this DIV
+
+$(this).removeClass("pop");
+
+});
+
+$("#bar13").css('background','#264C3A');
+
+$("#bar19").css('background','#264C3A');
+
+$("#bar6").css('background','#264C3A');
+
+$("#bar22").css('background','#264C3A');
+
+$("#bar13").addClass("pop");
+
+$("#bar19").addClass("pop");
+
+$("#bar6").addClass("pop");
+
+$("#bar22").addClass("pop");
+
+$(".pop").tooltip({tooltipcontentclass:"mycontent"});
+
+}
+
+if(index == 3){
+
+$(".bar .count").each(function() {
+
+$(this).css('background','#71A68D'); //Prints out the text contained in this DIV
+
+$(this).removeClass("pop");
+
+});
+
+$("#bar15").css('background','#264C3A');
+
+$("#bar20").css('background','#264C3A');
+
+$("#bar7").css('background','#264C3A');
+
+$("#bar23").css('background','#264C3A');
+
+$("#bar15").addClass("pop");
+
+$("#bar20").addClass("pop");
+
+$("#bar7").addClass("pop");
+
+$("#bar23").addClass("pop");
+
+$(".pop").tooltip({tooltipcontentclass:"mycontent"});
+
+}
+
+}
+
+
+
+});
+
+
+
+
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+
+	<!-- START HEADER -->
+
+	<div class="headercontainer">
+
+		<ul class="globalnav">
+
+			<li>Experiences in Software // <a href="#">Info</a></li>
+
+		</ul>
+
+		<div class="logo"></div>
+
+	</div>
+
+	<!--END HEADER -->
+
+	
+
+
+<h1>Yikes! Unable to serve that! Maybe one of these?</h1>
+
+
+
+
+	<!-- footer starts -->
+
+	<div class="footer">
+
+		<div class="sections">
+
+		<ul>
+
+			<li class="footerhead">Where we play</a></li>
+
+			<li><a href="cloud">Cloud</a></li>
+
+			<li><a href="saas">Online Business</a></li>
+
+			<li><a href="mo">Mobility</a></li>
+
+			<li><a href="social">Communities</a></li>
+
+			<li><a href="ux">Customer Experience</a></li>
+
+		</ul>
+
+		</div>
+
+		<div class="sections">
+
+		<ul>
+
+			<li class="footerhead">What we do</a></li>
+
+			<li><a href="platengg">Build Platforms</a></li>
+
+			<li><a href="saasdev">Plan and Build SaaS</a></li>
+
+			<li><a href="moapp">Build Mobile Applications</a></li>
+
+			<li><a href="snapp">Build Social Sensors</a></li>
+
+			<li><a href="uxdesign">Design User Experience</a></li>
+
+		</ul>
+
+		</div>
+
+
+
+		<div class="sections">
+
+		<ul>
+
+			<li class="footerhead">How we work</a></li>
+
+			<li><a href="/howwework/methodology.html">Methodology</a></li>
+
+			<li><a href="/howwework/alwaysagile.html">Always Agile with Qontext&trade;</a></li>
+
+			<li><a href="/howwework/brightest.html">BrighTest&trade; Tool</a></li>
+
+			<li><a href="/howwework/engagementmodels.html">Engagement Models</a></li>
+
+			<li><a href="/howwework/ipprotection.html">IP Protection</a></li>
+
+		</ul>
+
+		</div>
+
+		<div class="sections">
+
+		<ul>
+
+			<li class="footerhead">Special Services</a></li>
+
+			<li><a href="/specialservices/ideaprototyping.html">Idea Prototyping</a></li>
+
+			<li><a href="/specialservices/performanceengg.html">Performance Engineering</a></li>
+
+			<li><a href="/specialservices/testautomation.html">Product Test Automation</a></li>
+
+			<li><a href="/specialservices/compliancetesting.html">Compliance Testing</a></li>
+
+		</ul>
+
+		</div>
+
+		<div class="sections">
+
+		<ul>
+
+			<li class="footerhead">Who we are</a></li>
+
+			<li><a href="/aboutus/ourstory.html">Our Story</a></li>
+
+			<li><a href="/aboutus/whyimaginea.html">Why Imaginea?</a></li>
+
+			<li><a href="/aboutus/theteam.html">The Team</a></li>
+
+			<li><a href="/aboutus/careers.html">Work With Us</a></li>
+
+			<li><a href="/aboutus/related.html">Related Brands</a></li>
+
+		</ul>
+
+		</div>
+
+	
+
+	</div>
+
+	<div class="footer2">
+
+		<ul class="footer-elements">
+
+			<li class="twitterfeed">
+
+				<div class="tweetbird"></div>
+
+				<p>Need specialists to communicate features of our enterprise software product in a clear, concise way, exclnt verbal communication, 3-6 exp. concise way, exclnt verbal communication, 3-6 exp.</p>
+
+			</li>
+
+			<li class="follow">
+
+				<img src="/themes/images/followus.png" usemap="#followmap" border="0"/>
+
+				<map name="followmap">
+
+					<area shape="rect" coords="0,18,16,34" href="http://www.facebook.com" title="Subscribe to RSS">
+
+					<area shape="rect" coords="21,18,38,34" href="http://www.twitter.com" title="Follow us on Twitter">
+
+					<area shape="rect" coords="46,18,62,34" href="http://www.twitter.com" title="Become a fan on Facebook">
+
+				</map>
+
+			</li>
+
+			<li class="footerlinks">
+
+				<ul>
+
+				<li><a href="#">Blog</a></li>
+
+				<li><a href="/aboutus/showcase.html">Showcase</a></li>
+
+				<li><a href="/aboutus/careers.html">Careers</a></li>
+
+				<li><a href="/aboutus/media.html">Media</a></li>
+
+				<li><a href="/aboutus/legal.html">Legal</a></li>
+
+				<li><a href="/aboutus/contactus.html">Contact Us</a></li>
+
+				<li class="credits">Copyright (c) 2009, Pramati Technologies Private Limited. <br>All rights reserved</a>
+
+				</ul>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<!-- end of footer-->
+
+</div>
+
+<!-- end wrapper -->
+
+</body>
+
+</html>
+
+
