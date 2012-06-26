@@ -480,8 +480,8 @@ margin: 0px 30px 15px 0px;
 
 .sections a, .sections a:link,.sections a:active,.sections a:visited{
 	text-decoration:none;
-	color:#aea987;
-	font-size: 13px;
+	color:rgba(104, 99, 65, 1);
+	font-size: 16px;
 	font-style: italic;
 }
 

@@ -1,0 +1,86 @@
+.projectDetails{
+	font-size: 16px;
+	width: 1000px;
+	margin-left: -10px;
+	margin-top: 10px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+.projectDetails a:visited, .projectDetails a, {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+}
+
+.projectDetail {
+	width: 45%;
+	overflow: hidden;
+	margin: 10px 10px 10px 10px;
+	float: left;
+	border: 1px solid #ccc;
+	/*border-radius: 10px;*/
+	background: rgba(255, 255, 255, .3);
+	height: 250px;
+	padding: 35px 10px 0 10px;
+	position: relative;
+	overflow: hidden;
+	/*
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+	-o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;*/
+	
+
+   border-color:#ccc #658E15 #658E15 #658E15;
+
+   -webkit-box-shadow:1 1px 6px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   -moz-box-shadow:1 1px 6px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   box-shadow:1 1px 6px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   display:block;
+
+
+}
+
+.projectDetail::before {
+display: block;
+    position: absolute;
+    left: 115px;
+    top: -15px;
+    width: 75px;
+    height: 25px;
+    z-index: 2;
+    background-color: rgba(243,245,228,0.5);
+    border: 2px solid rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0 0 5px #888;
+    -moz-box-shadow: 0 0 5px #888;
+    box-shadow: 2px 2px 2px #000;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+
+}
+
+.projectDetail h3{
+	margin-top: 0px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	padding:2px 0px 2px 0px;
+	border-bottom: 1px solid #ccc;
+	background: rgba(255, 255, 255, .5);
+	/*background: rgba(254, 238, 47, 1);*/
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.sections .projectDetail h3 a, .sections .projectDetail h3 a:visited{
+	margin-left: 10px;
+	font-size: 18px;
+	font-style: normal;
+}
