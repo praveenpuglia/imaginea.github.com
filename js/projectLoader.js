@@ -4,18 +4,17 @@ var ProjectDetailsLoader = {
 	{
 		var projects = ["mViewer", "bot-bot", "FireFlow", "Matisse", "pancake-ios"];
 		var divArray = new Array(5);
-		console.log("Div Array Length: "+divArray.length);
 		var responseCount = 0;
 		var projectDetailsDiv = $("#projectDetails").addClass('projectDetails').css('opacity', '0');
 		console.log(projectDetailsDiv);
 		$.each(projects, function(index, project)
 		{
-			loadProjectDetails = function(project, projectIndex)
+			var loadProjectDetails = function(project, projectIndex)
 			{
 				getProjectDetails = function(projectDetails, projectDetailIndex)
 				{
 					var downloadCountUrl = "https://api.github.com/repos/Imaginea/"+project+"/downloads"
-					getDownloadCount = function(projectDetails, projectOrderIndex)
+				   getDownloadCount = function(projectDetails, projectOrderIndex)
 					{
 						_fillDetails = function(downloadsArray, projectData, divOrderIndex)
 						{
@@ -53,7 +52,8 @@ var ProjectDetailsLoader = {
 							var projectHomePageUrl = projectData.data.homepage;
 							
 							var h3 = $('<h3>').append($('<a>').attr('href', projectHomePageUrl).attr('target', '_blank').text(projectId));
-							var pDescription = $('<p>').text("Description: "+projectDescription);
+							//var pDescription = $('<p>').text("Description: "+projectDescription);
+							var pDescription = $('<p>').html('<label>Description: </label>'+projectDescription);
 							var pDownloadCount = null;
 							if(projectDownloadCount == -1)
 							{
@@ -65,21 +65,19 @@ var ProjectDetailsLoader = {
 								}
 								else
 								{
-									pDownloadCount = $('<p>').text("Download Stats: Count: "+projectDownloadStats.download_count+" ").append($('<a>').attr('href', projectDownloadStats.download_url).attr('target', '_blank').text("Link"));
+									pDownloadCount = $('<p>').html("<label>Download Stats: Count: </label>"+projectDownloadStats.download_count+" ").append($('<a>').attr('href', projectDownloadStats.download_url).attr('target', '_blank').text("Link"));
 								}
 							}
 							else
 							{	
-								pDownloadCount = $('<p>').text("Download Stats: "+projectDownloadCount);
+								pDownloadCount = $('<p>').html("<label>Download Stats: </label>"+projectDownloadCount);
 							}
-							var pUpdateDate = $('<p>').text("Update Date: "+projectUpdateDate);
-							var pWatchers = $('<p>').text("Watchers: "+projectWatchers+" Language: "+projectLanguage);
-							//var pLanguage = $('<p>').text("Language: "+projectLanguage);
+							var pUpdateDate = $('<p>').html("<label>Update Date: </label>"+projectUpdateDate);
+							var pWatchers = $('<p>').html("<label>Watchers: </label>"+projectWatchers+" <label>Language: </label>"+projectLanguage);
+
+							var svn_url = $('<p>').html("<label>Github url: </label>").append($("<a>").attr('href', projectData.data.svn_url).attr('target', '_blank').text(projectData.data.svn_url));
 							
-							var svn_url = $('<p>').text("Github url: ").append($("<a>").attr('href', projectData.data.svn_url).attr('target', '_blank').text(projectData.data.svn_url));
-							
-							var rootDiv = $("<div>").append(h3).addClass('projectDetail');
-							//var childDiv = $("<div>").append(pDescription, pDownloadCount, pUpdateDate, pWatchers, pLanguage,svn_url);
+							var rootDiv = $("<div>").append(h3).addClass('projectDetail lifted');
 							var childDiv = $("<div>").append(pDescription, pDownloadCount, pUpdateDate, pWatchers, svn_url);
 							rootDiv.append(childDiv);
 							divArray[divOrderIndex] = rootDiv;
