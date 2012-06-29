@@ -35,7 +35,7 @@ var ProjectDetailsLoader = {
 							};
 							var downloadStats = {
 													"FireFlow": {
-																	"download_count": 480,
+																	"download_count": 8969,
 																	"download_url": "https://addons.mozilla.org/en-US/firefox/addon/fireflow/statistics/?last=30"	
 																},
 													"pancake-ios": {
