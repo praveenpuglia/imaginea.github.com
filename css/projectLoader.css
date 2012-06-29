@@ -56,7 +56,9 @@
 }
 
 .projectDetail h3 {
+	font-family: 'Segoe UI', Arial, sans-serif;
 	margin-top: 0px;
+	letter-spacing: 0;
 	position: absolute;
 	width: 100%;
 	left: 0px;

@@ -17,8 +17,8 @@ var LoadDetails = (function()
 		var pUpdateDate = $('<p id="projectUpdateDate">');
 		var pWatchersAndDownloadCount = $('<p id="projectWatchersAndDc">');
 		var pSvnUrl = $('<p id="projectSvnUrl">');
-		var rootDiv = $("<div>").append(h3).addClass('projectDetail lifted');
 		var projectDetailsDiv = $("#projectDetails").css('opacity', '0');
+		var rootDiv = $("<div>").append(h3).addClass('projectDetail lifted '+projectName);
 		var childDiv = $("<div>").append(pDescription, pDownloadStats, pUpdateDate, pWatchersAndDownloadCount, pSvnUrl).addClass(projectName);
 		rootDiv.append(childDiv);
 		projectDetailsDiv.append(rootDiv);
