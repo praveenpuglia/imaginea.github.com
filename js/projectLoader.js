@@ -1,3 +1,4 @@
+/* Updated Code */
 var LoadDetails = (function()
 {
 	var getJsonResponse = function(requestUrl, callback) {
