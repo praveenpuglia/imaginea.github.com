@@ -17,9 +17,8 @@ var LoadDetails = (function()
 		var pUpdateDate = $('<p id="projectUpdateDate">');
 		var pWatchersAndDownloadCount = $('<p id="projectWatchersAndDc">');
 		var pSvnUrl = $('<p id="projectSvnUrl">');
-		var rootDiv = $("<div>").addClass('projectDetail lifted');
+		var rootDiv = $("<div>").append(h3).addClass('projectDetail lifted');
 		var projectDetailsDiv = $("#projectDetails").css('opacity', '0');
-		var rootDiv = $("<div>").append(h3).addClass('projectDetail lifted '+projectName);
 		var childDiv = $("<div>").append(pDescription, pDownloadStats, pUpdateDate, pWatchersAndDownloadCount, pSvnUrl).addClass(projectName);
 		rootDiv.append(childDiv);
 		projectDetailsDiv.append(rootDiv);
@@ -59,14 +58,8 @@ var LoadDetails = (function()
 			{
 				case 0: 
 					var downloadStats = {
-							"FireFlow": {
-											"download_count": 8969,
-											"download_url": "https://addons.mozilla.org/en-US/firefox/addon/fireflow/statistics/?last=30"	
-										},
-							"pancake-ios": {
-											"download_count": 160,
-											"download_url": "http://itunes.apple.com/us/app/sugar-on-pancake/id528250369?mt=8"
-											}
+							"FireFlow": { "download_count": 8969, "download_url": "https://addons.mozilla.org/en-US/firefox/addon/fireflow/statistics/?last=30"	},
+							"pancake-ios": { "download_count": 160, "download_url": "http://itunes.apple.com/us/app/sugar-on-pancake/id528250369?mt=8"}
 						};
 					if(downloadStats[projectName])
 					{
