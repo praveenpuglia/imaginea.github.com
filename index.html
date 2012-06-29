@@ -14,7 +14,14 @@
 		$(function(){
 			//Load JSON Data
 			$(document).ready(function(){
-				ProjectDetailsLoader.load();
+				//ProjectDetailsLoader.load();
+				var projects = ["mViewer", "bot-bot", "FireFlow", "Matisse", "pancake-ios"];
+				$.each(projects, function(index, project)
+				{
+					LoadDetails.initialize(project);
+				});
+				$('#projectDetails').css('opacity', '');
+				$('#loader').hide();
 			});
 			
 		});
@@ -33,7 +40,7 @@
 	  <div class="headercontainer">
 	    <a href="http://www.imaginea.com" target="_blank"><div class="logo"></div></a>
 	    <ul class="globalnav">
-		  <li>Bringing Ideas to Life <!-- b>//</b> <!-- a href="http://www.imaginea.com">info</a --></li>
+		  <li>Bringing Ideas to Life </li>
 		</ul>
 	  </div>
 	</div>
@@ -50,7 +57,7 @@ We at imaginea believe in contributing back to the open source community. This p
 		<div class="sections">
 		  <div id="projectDetailsContainer">
 			<div id='loader'>Loading...</div>
-			<div id='projectDetails'></div>
+			<div id='projectDetails' class="projectDetails"></div>
 		  </div>
 		</div>
 		
