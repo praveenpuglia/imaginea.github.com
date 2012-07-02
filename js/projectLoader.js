@@ -31,9 +31,6 @@ var LoadDetails = (function()
 		var requestUrl = 'https://api.github.com/repos/Imaginea/'+projectName+"?callback=displayDetails";
 		getJsonResponse(requestUrl, function(projectData)
 		{
-			console.log("callback received ");
-			console.log(projectData);
-			console.log(projectName);
 			var projectId = projectData.data.name;
 			var projectDescription = projectData.data.description;
 			var projectUpdateDate = new Date(projectData.data.updated_at).toLocaleDateString();
@@ -87,7 +84,6 @@ var LoadDetails = (function()
 	return {
 		initialize: function(projectName)
 		{
-			console.log("init called");
 			createDiv(projectName);
 			createProjectDetailsDisplay(projectName);
 			createProjectDownloadStatsDisplay(projectName)
