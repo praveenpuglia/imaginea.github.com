@@ -6,22 +6,28 @@
 	font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.projectDetails a:visited, .projectDetails a, {
+.maincontainer .middlebar {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.projectDetails a:visited, .projectDetails a {
 	font-family: 'Segoe UI', Arial, sans-serif;
 	font-style: normal;
 	font-size: 30px;
 }
 
 .projectDetail {
-	 background: none repeat scroll 0 0 #FFFFFF;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    float: left;
-    margin: 2em 10px 10px;
-    padding: 2em;
-    position: relative;
-    width: 40%;
-    height: 250px;
-    display: block;
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	float: left;
+	margin: 10px 10px 10px;
+	padding: 2em;
+	padding-top: 30px;
+	position: relative;
+	width: 40%;
+	height: 150px;
+	display: block;   
 }
 
 .projectDetail:before, .projectDetail:after {
@@ -31,7 +37,6 @@
 }
 
 .lifted:before, .lifted:after {
-	transform:rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
@@ -46,7 +51,6 @@
 }
 
 .lifted:after {
-     transform:rotate(3deg);
     -moz-transform: rotate(3deg);
     -webkit-transform: rotate(3deg);
     -o-transform: rotate(3deg);
@@ -55,7 +59,7 @@
     right: 10px;
 }
 
-.projectDetail h3 {
+.projectDetailsHeader {
 	font-family: 'Segoe UI', Arial, sans-serif;
 	margin-top: 0px;
 	letter-spacing: 0;
@@ -70,17 +74,41 @@
 	border-top-right-radius: 10px;
 }
 
+.projectDetailsHeaderLeft {
+	float: left;
+}
+
+.projectDetailsHeaderRight {
+	float: right;
+	padding-right: 5px;
+}
+
+.projectDetailsHeader .projectDetailsHeaderRight p {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.projectDetailsHeader .projectDetailsHeaderRight p label {
+	padding-left: 2px;
+	padding-right: 5px;
+}
+
+.projectDetailsHeader .projectDetailsHeaderLeft h3 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+    margin-top: 0px;
+    letter-spacing: 0;
+}
+
 .projectDetail p label {
-	/*width: 8em;
-	display:block;
-		float: left;*/
 	color: #686341;
 	font-weight:bold;
 
 }
 
 .projectDetail p {
-	padding-top: 15px;
+	padding-top: 10px;
 	margin-bottom: 0px;
 }
 
