@@ -9,20 +9,20 @@ var LoadDetails = (function()
 						dataType: 'jsonp'
 				});
 	};
-	
+
 	var createDiv = function(projectName) {
 		var headerDiv = $('<div>').addClass('projectDetailsHeader');
 		var headingDiv = $('<div>').addClass('projectDetailsHeaderLeft');
 		var watchersDiv = $('<div>').addClass('projectDetailsHeaderRight');
-		
+
 		var h3 = $('<h3 id="'+projectName+'_projectHeader">');
 		var pDescription = $('<p id="projectDescription">');
 		var pDownloadStats = $('<p id="projectLanguage">');
 		var pUpdateDate = $('<p id="projectUpdateDate">');
-		var pWatchersAndDownloadCount = $('<p id="'+projectName+'_projectWatchersAndDc">').html('<img src="images/watchers_icon.png" /><label id="'+projectName+'_watcherslabel"></label> <img src="images/downloads_icon.png" /><label id="'+projectName+'_downloadslabel"></label>');
+		var pWatchersAndDownloadCount = $('<p id="'+projectName+'_projectWatchersAndDc">').html('<img src="images/watchers_icon.png" class="header_icons"/><label id="'+projectName+'_watcherslabel" class="header_label"></label> <img src="images/downloads_icon.png" class="header_icons" /><label id="'+projectName+'_downloadslabel" class="header_label" ></label>');
 		var pSvnUrl = $('<p id="projectSvnUrl">');
 		var projectDetailsDiv = $("#projectDetails");
-		
+
 		headingDiv.append(h3);
 		watchersDiv.append(pWatchersAndDownloadCount);
 		
@@ -32,7 +32,7 @@ var LoadDetails = (function()
 		rootDiv.append(childDiv);
 		projectDetailsDiv.append(rootDiv);
 	};
-	
+
 	var createProjectDetailsDisplay = function(projectName)
 	{
 		var context = this;
@@ -51,10 +51,11 @@ var LoadDetails = (function()
 			$('.'+projectName+' > #projectDescription').html(projectDescription);
 			$('.'+projectName+' > #projectUpdateDate').html("<label>Update Date: </label>"+projectUpdateDate);
 			$('.'+projectName+' > #projectLanguage').html("<label>Language: </label>"+projectLanguage);
-			$('#'+projectName+'_watcherslabel').text(projectWatchers);//("<label>Watchers: </label>"+projectWatchers+" <label>Language: </label>"+projectLanguage);
+			$('#'+projectName+'_watcherslabel').text(projectWatchers);
 			$('.'+projectName+' > #projectSvnUrl').html("<label>Github url: </label>").append($("<a>").attr('href', projectSvnUrl).attr('target', '_blank').text(projectSvnUrl));
 		});
 	};
+
 	var createProjectDownloadStatsDisplay = function(projectName)
 	{
 		var downloadCountUrl = "https://api.github.com/repos/Imaginea/"+projectName+"/downloads";
@@ -70,7 +71,6 @@ var LoadDetails = (function()
 						};
 					if(downloadStats[projectName])
 					{
-						//$('.'+projectName+'> #projectDownloadStats').html("<label>Download Stats: Count: </label>"+downloadStats[projectName].download_count+" ").append($('<a>').attr('href', downloadStats[projectName].download_url).attr('target', '_blank').text("Link"));
 						$('#'+projectName+'_downloadslabel').html($('<a>').attr('href', downloadStats[projectName].download_url).attr('target', '_blank').text(downloadStats[projectName].download_count));
 					}
 					else

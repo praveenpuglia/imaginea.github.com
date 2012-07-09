@@ -83,14 +83,20 @@
 	padding-right: 5px;
 }
 
+.header_icons {
+	width: 20px;
+	opacity: 0.5;
+	height: 15px;
+}
+
+.header_label, .projectDetailsHeaderRight .header_label a {
+	padding-left: 2px;
+	padding-right: 5px;
+	font-size: 14px;
+}
 .projectDetailsHeader .projectDetailsHeaderRight p {
 	padding-top: 0px;
 	padding-bottom: 0px;
-}
-
-.projectDetailsHeader .projectDetailsHeaderRight p label {
-	padding-left: 2px;
-	padding-right: 5px;
 }
 
 .projectDetailsHeader .projectDetailsHeaderLeft h3 {
