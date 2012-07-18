@@ -66,8 +66,8 @@ var LoadDetails = (function()
 			{
 				case 0: 
 					var downloadStats = {
-							"FireFlow": { "download_count": 9118, "download_url": "https://addons.mozilla.org/en-US/firefox/addon/fireflow/statistics/?last=30"	},
-							"pancake-ios": { "download_count": 160, "download_url": "http://itunes.apple.com/us/app/sugar-on-pancake/id528250369?mt=8"}
+							"FireFlow": { "download_count": 9364, "download_url": "https://addons.mozilla.org/en-US/firefox/addon/fireflow/statistics/?last=30"	},
+							"pancake-ios": { "download_count": 290, "download_url": "http://itunes.apple.com/us/app/sugar-on-pancake/id528250369?mt=8"}
 						};
 					if(downloadStats[projectName])
 					{
