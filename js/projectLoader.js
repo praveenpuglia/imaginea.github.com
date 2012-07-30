@@ -41,7 +41,7 @@ var LoadDetails = (function()
 		{
 			var projectId = projectData.data.name;
 			var projectDescription = projectData.data.description;
-			var projectUpdateDate = new Date(projectData.data.updated_at).toLocaleDateString();
+			var projectUpdateDate = new Date(projectData.data.pushed_at).toLocaleDateString();
 			var projectWatchers = projectData.data.watchers;
 			var projectLanguage = projectData.data.language;
 			var projectSvnUrl = projectData.data.svn_url;
