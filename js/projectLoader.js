@@ -55,6 +55,7 @@ var LoadDetails = (function()
 			$('.'+projectName+' > #projectSvnUrl').html("<label>Github url: </label>").append($("<a>").attr('href', projectSvnUrl).attr('target', '_blank').text(projectSvnUrl));
 		});
 	};
+	
 
 	var createProjectDownloadStatsDisplay = function(projectName)
 	{
